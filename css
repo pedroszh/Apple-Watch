@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("apple.png");
+  background-repeat: no-repeat;
+  background-position: 446px center ;
+  background-size: 640px; 
+  
+  height: 730px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+
+}
+
+svg {
+  width: 75px;
+  fill: #7effb2;
+}
+
+h1 {
+  font-size: 32px;
+  transition: opacity 0.3s;
+}
+
+img {
+  display: block;
+}
+
+.tela {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #3a3b42;
+  width: 300px;
+  aspect-ratio: 400/490;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 85px;
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tela::-webkit-scrollbar {
+  display: none;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  top: 0;
+  background-color: #3a3b42;
+
+}
+
+
+.exercicios {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.exercicio {
+  background-color: #154f00;
+  /* width: 150px; */
+  padding: 10px;
+  border-radius: 10px;
+  /* border: 2px solid red;
+  margin: 20px; */
+  cursor: pointer;
+}
+
+.atividade {
+  font-weight: 600;
+}
+
+.cronometro {
+  display: none;
+  margin-top: 25px;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.botao {
+  width: 75px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.play,
+.pause {
+  background-color: #2a728e;
+}
+
+.close {
+  background-color: #7b3f3f;
+}
+
+.pause {
+  display: none;
+}
+
+.voltar {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tempo {
+  display: flex;
+  gap: 5px;
+  font-size: 40px;
+}
+
+.numero {
+  display: flex;
+  justify-content: center;
+  width: 55px;
+}
+
+.iniciou .play {
+  display: none;
+}
+
+.iniciou .pause {
+  display: block;
+}
+
+.tela--cronometro .cronometro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tela--cronometro .exercicios {
+  display: none;
+}
+
+.tela--cronometro h1 {
+  opacity: 0;
+}
+
